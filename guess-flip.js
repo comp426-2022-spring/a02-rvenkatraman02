@@ -5,7 +5,7 @@ const argv = (minimist)(process.argv.slice(2));
 argv['call']
 const call = argv.call;
 
-if (call.toUpperCase() == 'HEADS' || call.toUpperCase() == 'TAILS') {
+if (call == 'heads' || call == 'tails') {
     console.log(flipACoin(call));
 }
 else {

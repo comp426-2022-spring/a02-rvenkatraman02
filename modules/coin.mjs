@@ -65,15 +65,21 @@ function coinFlips(flips) {
  */
 
 function countFlips(array) {
-  let head_num = 0;
+  let heads_num = 0;
   let tails_num = 0;
-  for (let i = 0; i < array.length; i++) {
-    if (array[i].toUpperCase() == "TAILS") {
-      tails_num += 1;
+  if(array.length > 1) {
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] == 'tails') {
+        tails_num += 1;
+      }
+      else if (array[i] == 'heads') {
+        heads_num += 1;
+      }
     }
-    else if (array[i].toUpperCase() == "HEADS") {
-      heads_num += 1;
-    }
+  }
+  else if (array.length == 1) {
+    if (array[0] == 'tails') tails_num += 1;
+    else if (array[0] == 'heads') heads_num += 1;
   }
   return {heads: heads_num, tails: tails_num};
 }

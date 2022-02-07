@@ -5,5 +5,6 @@ const argv = (minimist)(process.argv.slice(2));
 argv['number'];
 const flips = argv.number || 1;
 
-console.log(coinFlips(flips));
-console.log(countFlips(flips));
+var flips_arr = coinFlips(flips);
+console.log(flips_arr);
+console.log(countFlips(flips_arr));
