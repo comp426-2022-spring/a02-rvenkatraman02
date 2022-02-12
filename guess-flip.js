@@ -9,5 +9,5 @@ if (call == 'heads' || call == 'tails') {
     console.log(flipACoin(call));
 }
 else {
-    console.log('Error: Incorrect input');
+    console.log('Error: Incorrect input \nUsage: node guess-filp.js --call=[heads|tails]');
 }
