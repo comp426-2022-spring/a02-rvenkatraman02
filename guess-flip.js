@@ -5,9 +5,12 @@ const argv = (minimist)(process.argv.slice(2));
 argv['call']
 const call = argv.call;
 
-if (call == 'heads' || call == 'tails') {
-    console.log(flipACoin(call));
+if (call == null) {
+    console.log("Error: No input");
+}
+else if(call != "heads" && call != "tails") {
+    console.log("Error: Incorrect input");
 }
 else {
-    console.log('Error: Incorrect input \nUsage: node guess-filp.js --call=[heads|tails]');
+    console.log(flipACoin(call));
 }
