@@ -1,12 +1,5 @@
 import minimist from 'minimist';
-// import {createRequire} from 'module';
-// const require = createRequire(import.meta.url);
-
 import { flipACoin } from './modules/coin.mjs';
-
-// const args = require('minimist')(process.argv.slice(2));
-// args['call'];
-// const call = args.call;
 
 const argv = (minimist)(process.argv.slice(2));
 argv['call']
