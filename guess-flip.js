@@ -8,5 +8,5 @@ const call = argv.call;
 if (call == "heads" || call == "tails") {
     console.log(flipACoin(call));
 }
-else if (call == null) console.log("Error: incorrect input.\nUsage: node guess-flip --call[heads|tails]");
+else if (call == null) console.log("Error: no input.\nUsage: node guess-flip --call[heads|tails]");
 else console.log("Error: incorrect input.\nUsage: node guess-flip --call[heads|tails]");
