@@ -1,9 +1,9 @@
 import minimist from 'minimist';
 import { flipACoin } from './modules/coin.mjs';
 
-const argv = (minimist)(process.argv.slice(2));
-argv['call']
-const call = argv.call;
+const args = (minimist)(process.argv.slice(2));
+args['call']
+const call = args.call;
 
 if (call == "heads" || call == "tails") {
     console.log(flipACoin(call));
